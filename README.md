@@ -7,6 +7,7 @@ The commands used for nix on macOS
 - My [list][] of packages installed by **nix**.
 - Here is the manual for me to set up a brand new mac in the future.
 - I also put my `tmux.conf`, `.zshrc` and `.vimrc` here.
+- `reattach-to-user-namespace` should be installed in order to communicate with system clipboard when in `tmux`. 
 ---
 
 ## Needed softwares

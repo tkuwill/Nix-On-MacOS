@@ -2,6 +2,7 @@ bat-0.22.1
 lazygit-0.36.0
 mpv-with-scripts-0.35.1
 neofetch-unstable-2021-12-10
+reattach-to-user-namespace-2.9
 streamlink-5.2.1
 tmux-3.3a
 tree-2.0.4

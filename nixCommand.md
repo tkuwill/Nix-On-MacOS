@@ -39,6 +39,10 @@ nix-env -u --dry-run
 ```
 You can use the command above to find out what packages would be upgraded by `nix-env -u`.
 
+```bash
+nix-env -qc
+```
+This command can let you compare installed versions to what’s available.
 
 7. [Upgrading Nix][] 
 ```bash

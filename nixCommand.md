@@ -48,9 +48,19 @@ This command can let you compare installed versions to what’s available.
 ```bash
 sudo -i sh -c 'nix-channel --update && nix-env -iA nixpkgs.nix && launchctl remove org.nixos.nix-daemon && launchctl load /Library/LaunchDaemons/org.nixos.nix-daemon.plist'
 ```
+8. [Fix Nix on macOS after system update][]
+After a macOS update, check `/etc/zshrc`. It should have the codes following: 
 
+```nix
+# Nix
+if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+  fi
+# End Nix
 
-
+```
+If it were gone, add that back to the bottom of your `/etc/zshrc`. Then it should work. Use `sudo --edit /etc/zshrc` to edit the file.(Mac doesn't have `sudoedit`.)
 
 [Upgrading Nix]: https://nixos.org/manual/nix/stable/installation/upgrading.html
 [Nix Reference Manual]: https://nixos.org/manual/nix/stable/installation/upgrading.html
+[Fix Nix on macOS after system update]: https://gist.github.com/meeech/0b97a86f235d10bc4e2a1116eec38e7e#check-you-have-nix

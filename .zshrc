@@ -40,6 +40,11 @@ compinit
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting.git/zsh-syntax-highlighting.zsh
 
+# fzf
+if [ -n "${commands[fzf-share]}" ]; then
+  source "$(fzf-share)/key-bindings.zsh"
+  source "$(fzf-share)/completion.zsh"
+fi
 # End of lines added by compinstall
 alias lah="ls -lah --color=auto"
 alias la="ls -la --color=auto"
@@ -48,7 +53,7 @@ alias ls -la="ls -la --color=auto"
 #alias ls="ls --color"
 # alias ls="ls -G"
 alias ls -l="ls -Gl"
-
+alias musicDownloadTui="~/ShellScripts/musicDownloadTui.sh"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 

@@ -2,7 +2,7 @@
 ##### Credit from [Nix Reference Manual][].
 1. Installing a package.
 ```bash
-nix-env -i package_name
+nix-env -iA nixpkgs.package_name
 ```
 
 `-i` means install. 

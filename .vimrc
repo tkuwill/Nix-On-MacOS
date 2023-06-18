@@ -7,10 +7,15 @@ Plug 'morhetz/gruvbox'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'mattn/emmet-vim'
 Plug 'preservim/nerdtree'
+Plug 'Yggdroot/indentLine'
 " Plug 'itchyny/lightline.vim'
 Plug 'ap/vim-css-color'
 Plug 'tpope/vim-commentary'
 call plug#end()
+
+" indentline config (disable the conceal for JSON and markdown)
+let g:vim_json_conceal=0
+let g:markdown_syntax_conceal=0
 
 set shortmess-=S
 set t_Co=256 

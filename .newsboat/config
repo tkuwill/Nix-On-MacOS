@@ -1,7 +1,9 @@
 auto-reload yes
 
 ## from https://gist.github.com/vipzhicheng/610cdb7a3a2adaeac3e53bd128c2de47
-browser "open -g -a 'Microsoft edge' %u"
+# browser "open -g -a 'Safari' %u"
+# browser "open -a Safari -n"
+browser "open -a Safari -g"
 unbind-key j 
 unbind-key J
 unbind-key k

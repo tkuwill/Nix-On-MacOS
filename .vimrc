@@ -2,7 +2,6 @@ call plug#begin('~/.vim/plugged')
 
 " Color themes
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'morhetz/gruvbox'
 " other plugin
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'mattn/emmet-vim'
@@ -19,8 +18,6 @@ let g:markdown_syntax_conceal=0
 
 set shortmess-=S
 set t_Co=256 
-"let g:gruvbox_contrast_light = 'hard'
-"colorscheme gruvbox
 set background=light
 colorscheme PaperColor
 set cursorline
@@ -81,7 +78,11 @@ nnoremap <C-H> <Home>
 nnoremap <C-L> <End>
 inoremap <C-H> <Home>
 inoremap <C-L> <End>
-map <F5> :NERDTreeToggle<CR>
-
+map <F2> :NERDTreeToggle<CR>
+" spelling check in English
+set spelllang=en,cjk
+nnoremap <F3> :set spell<cr>
+nnoremap <F4> :set nospell<cr>
+"
 
 so ~/.vim/autoload/plug.vim

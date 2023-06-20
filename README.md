@@ -3,11 +3,14 @@ The commands used for nix on macOS
 
 ---
 
+- [darwin-configuration.nix][] is the file equivalent to **configuration.nix** on NixOS. If you want to use that feature on macOS, see [nix-darwin][].
+- Also, you can take a look at [MacOS Nix Setup (an alternative to Homebrew)][].
 - You can see the command in [nixCommand.md][].
-- My [list][] of packages installed by **nix**.
 - Here is the manual for me to set up a brand new mac in the future.
 - I also put my `tmux.conf`, `.zshrc` and `.vimrc` here.
 - `reattach-to-user-namespace` should be installed in order to communicate with system clipboard when in `tmux`. 
+- Use [Google日本語入力][] for inputting Japanese on my macOS.
+- Use [Rime鼠鬚管][] for inputting Chinese. I mainly use [地球拼音][], but have [朙月拼音][] as a fallback.
 ---
 
 ## Needed softwares
@@ -40,4 +43,11 @@ The commands used for nix on macOS
 [Spaceman]: https://github.com/Jaysce/Spaceman
 [Amethyst]: https://github.com/ianyh/Amethyst
 [nixCommand.md]: https://github.com/tkuwill/Nix-On-MacOS/blob/master/nixCommand.md
-[list]: https://github.com/tkuwill/Nix-On-MacOS/blob/master/macosInstalledbyNixPackages.txt
+[darwin-configuration.nix]: https://github.com/tkuwill/Nix-On-MacOS/blob/6a4e241ae6ef933ef120fe7fa4267e6200fefeb3/.nixpkgs/darwin-configuration.nix
+[nix-darwin]: https://github.com/LnL7/nix-darwin
+[MacOS Nix Setup (an alternative to Homebrew)]: https://wickedchicken.github.io/post/macos-nix-setup/
+[Google日本語入力]: https://www.google.co.jp/ime/
+[Rime鼠鬚管]: https://rime.im/download/
+[地球拼音]: https://gist.github.com/lotem/2309739#file-default-custom-yaml-L12
+[朙月拼音]: https://gist.github.com/lotem/2309739#file-default-custom-yaml-L11
+

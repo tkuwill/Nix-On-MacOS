@@ -3,7 +3,7 @@ autoload -Uz vcs_info
 precmd() { vcs_info }
 
 # Format the vcs_info_msg_0_ variable
-zstyle ':vcs_info:git:*' formats 'on branch %b'
+zstyle ':vcs_info:git:*' formats 'on branch %b %m%u%c'
 
 
 # function battery {
@@ -12,10 +12,8 @@ zstyle ':vcs_info:git:*' formats 'on branch %b'
 #function battime {
 #      pmset -g batt | grep -Eo "\d:\d remaining"
 #}
-
+RPROMPT=''
 setopt promptsubst
-# RPROMPT='%F{232}[%?]| %*%f 🔋$(battery)% '
-# PROMPT='  %F{165}%f %F{232}%n@%f%F{18}%m%f  %F{20}in %~ ${vcs_info_msg_0_} %f  
 PROMPT='%F{20} %~ ${vcs_info_msg_0_} %f  
 %F{6} %#%f  '
 # Lines configured by zsh-newuser-install
@@ -38,7 +36,7 @@ zstyle ':completion:*' menu yes select
 autoload -Uz compinit
 compinit
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.zsh/zsh-syntax-highlighting.git/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # fzf
 if [ -n "${commands[fzf-share]}" ]; then
@@ -54,8 +52,13 @@ alias ls -la="ls -la --color=auto"
 # alias ls="ls -G"
 alias ls -l="ls -Gl"
 alias musicDownloadTui="~/ShellScripts/musicDownloadTui.sh"
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# Default key bindings
+[[ -n ${key[Delete]} ]] && bindkey "${key[Delete]}" delete-char
+[[ -n ${key[Home]} ]] && bindkey "${key[Home]}" beginning-of-line
+[[ -n ${key[End]} ]] && bindkey "${key[End]}" end-of-line
+[[ -n ${key[Up]} ]] && bindkey "${key[Up]}" up-line-or-search
+[[ -n ${key[Down]} ]] && bindkey "${key[Down]}" down-line-or-search
 
 # export LESS_TERMCAP_mb=$'\E[01;4m'       # begin blinking
 # export LESS_TERMCAP_md=$'\E[01;38;5;74m'  # begin bold

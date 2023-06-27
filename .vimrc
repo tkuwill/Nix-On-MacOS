@@ -7,20 +7,28 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'mattn/emmet-vim'
 Plug 'preservim/nerdtree'
 Plug 'Yggdroot/indentLine'
+" For changing mac input method to ENG when in normal mode
+Plug 'ybian/smartim' 
 " Plug 'itchyny/lightline.vim'
 Plug 'ap/vim-css-color'
 Plug 'tpope/vim-commentary'
 call plug#end()
+" This will make esc key respond faster when having the config below.
+set ttimeoutlen=100
+" Change input method to ENG when entering normal mode
+let g:smartim_default = 'com.apple.keylayout.ABC'
 
 " indentline config (disable the conceal for JSON and markdown)
 let g:vim_json_conceal=0
 let g:markdown_syntax_conceal=0
-
-set shortmess-=S
+" Background color config
 set t_Co=256 
 set background=light
 colorscheme PaperColor
+" General config
+set shortmess-=S
 set cursorline
+set cursorcolumn
 set splitbelow splitright
 set wildmenu
 set number
@@ -32,8 +40,6 @@ set listchars=tab:>~,space:.
 set cindent
 set ai
 syntax on
-set splitbelow splitright
-" set laststatus=2
 " set statusline+=%F
 " Some funky status bar code its seems
 " https://stackoverflow.com/questions/9065941/how-can-i-change-vim-status-line-colour

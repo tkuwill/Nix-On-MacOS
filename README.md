@@ -1,5 +1,5 @@
 # Nix-On-MacOS
-The commands used for nix on macOS
+dotfiles on macOS & a memo of the commands used for nix on macOS
 
 ---
 

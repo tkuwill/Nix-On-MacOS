@@ -29,6 +29,11 @@ dotfiles on macOS & a memo of the commands used for nix on macOS
 - [NTFS for Mac][]: as its name.
 - [Yoink][]: Improved Drag and Drop.
 
+## Want to buy
+
+- [MacUpdater][]: An application that can scan your Mac and display which of the apps that you have installed are not up-to-date.
+
+[MacUpdater]: https://www.corecode.io/index.html
 [Yoink]: https://apps.apple.com/tw/app/yoink-improved-drag-and-drop/id457622435?mt=12
 [NTFS for Mac]: https://www.paragon-software.com/zh/home/ntfs-%20mac%20/
 [Macs Fan Control]: https://crystalidea.com/macs-fan-control

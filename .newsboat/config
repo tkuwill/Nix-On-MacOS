@@ -1,5 +1,5 @@
 auto-reload yes
-
+include ~/.newsboat/plain.config
 ## from https://gist.github.com/vipzhicheng/610cdb7a3a2adaeac3e53bd128c2de47
 # browser "open -g -a 'Safari' %u"
 # browser "open -a Safari -n"

@@ -81,6 +81,10 @@ nix-store --query --requisites /run/current-system | cut -d- -f2- | sort | uniq 
 ```bash
 nix-collect-garbage -d
 ```
+6. Search the package:
+```bash
+ nix-env -qaA nixpkgs.package_name
+```
 
 [Upgrading Nix]: https://nixos.org/manual/nix/stable/installation/upgrading.html
 [Nix Reference Manual]: https://nixos.org/manual/nix/stable/installation/upgrading.html

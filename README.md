@@ -13,7 +13,13 @@ dotfiles on macOS & a memo of the commands used for nix on macOS
 - Use [Google日本語入力][] for inputting Japanese on my macOS.
 - Use [Rime鼠鬚管][] for inputting Chinese. I mainly use [地球拼音][], but have [朙月拼音][] as a fallback.
 ---
+## iiNA special config
+Because `yt-dlp` is installed at `/run/current-system/sw/bin/yt-dlp` by `nix-darwin`, you would have to make a `soft-link` in `/usr/local/bin` to let **iiNA** use it.
+```bash
+cd /usr/local/bin
 
+ln -s /run/current-system/sw/bin/yt-dlp /usr/bin/youtube-dl
+```
 ## Needed softwares
 
 - [Amethyst][]: A tiling window manager for macOS.

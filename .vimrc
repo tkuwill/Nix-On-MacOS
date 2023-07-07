@@ -1,3 +1,4 @@
+" Vim-plug and plugins
 call plug#begin('~/.vim/plugged')
 
 " Color themes
@@ -7,6 +8,7 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'mattn/emmet-vim'
 Plug 'preservim/nerdtree'
 Plug 'Yggdroot/indentLine'
+Plug 'justinmk/vim-sneak'
 " For changing mac input method to ENG when in normal mode
 Plug 'ybian/smartim' 
 " Plug 'itchyny/lightline.vim'
@@ -33,14 +35,12 @@ set splitbelow splitright
 set wildmenu
 set number
 set softtabstop=4
-set ignorecase
 set smartcase
 set hlsearch
 set listchars=tab:>~,space:.
 set cindent
 set ai
 syntax on
-" set statusline+=%F
 " Some funky status bar code its seems
 " https://stackoverflow.com/questions/9065941/how-can-i-change-vim-status-line-colour
 set laststatus=2            " set the bottom status bar

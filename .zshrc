@@ -20,7 +20,7 @@ PROMPT='%F{20} %~ ${vcs_info_msg_0_} %f
 HISTFILE=~/.zsh_history
 HISTSIZE=50000
 SAVEHIST=99999
-HISTORY_IGNORE="(ls -l|cd|pwd|exit|la|bye|ranger|mpv|yt-dlp|./batterycycle.sh|tmux| ..)"
+HISTORY_IGNORE="(ls -l|cd|pwd|exit|la|bye|lazygit|mpv|yt-dlp|./batterycycle.sh|tmux| ..)"
 setopt beep nomatch
 unsetopt autocd extendedglob notify
 # Use C-x C-e to open the default editor to edit the command line
@@ -43,6 +43,7 @@ if [ -n "${commands[fzf-share]}" ]; then
   source "$(fzf-share)/key-bindings.zsh"
   source "$(fzf-share)/completion.zsh"
 fi
+bindkey "ç" fzf-cd-widget
 # End of lines added by compinstall
 alias lah="ls -lah --color=auto"
 alias la="ls -la --color=auto"
@@ -52,7 +53,8 @@ alias ls -la="ls -la --color=auto"
 # alias ls="ls -G"
 alias ls -l="ls -Gl"
 alias musicDownloadTui="~/ShellScripts/musicDownloadTui.sh"
-
+alias vpnLocation="curl ipinfo.io/country"
+alias vpnCountry="curl ifconfig.co/country"
 # Default key bindings
 [[ -n ${key[Delete]} ]] && bindkey "${key[Delete]}" delete-char
 [[ -n ${key[Home]} ]] && bindkey "${key[Home]}" beginning-of-line

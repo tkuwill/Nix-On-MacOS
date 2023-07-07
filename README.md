@@ -6,6 +6,7 @@ dotfiles on macOS & a memo of the commands used for nix on macOS
 - [darwin-configuration.nix][] is the file equivalent to **configuration.nix** on NixOS. If you want to use that feature on macOS, see [nix-darwin][].
 - Also, you can take a look at [MacOS Nix Setup (an alternative to Homebrew)][].
 - You can see the command in [nixCommand.md][].
+- Here is [the skills of using vim and zsh][].
 - Here is the manual for me to set up a brand new mac in the future.
 - I also put my `tmux.conf`, `.zshrc` and `.vimrc` here.
 - `reattach-to-user-namespace` should be installed in order to communicate with system clipboard when in `tmux`. 
@@ -33,6 +34,8 @@ dotfiles on macOS & a memo of the commands used for nix on macOS
 
 - [MacUpdater][]: An application that can scan your Mac and display which of the apps that you have installed are not up-to-date.
 
+
+[the skills of using vim and zsh]: https://github.com/tkuwill/Nix-On-MacOS/blob/master/skills.md
 [MacUpdater]: https://www.corecode.io/index.html
 [Yoink]: https://apps.apple.com/tw/app/yoink-improved-drag-and-drop/id457622435?mt=12
 [NTFS for Mac]: https://www.paragon-software.com/zh/home/ntfs-%20mac%20/

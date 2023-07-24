@@ -25,6 +25,7 @@ ln -s /run/current-system/sw/bin/yt-dlp /usr/bin/youtube-dl
 - [Amethyst][]: A tiling window manager for macOS.
 - [Apple Configurator][]: An app for configuring iOS devices on macOS.
 - [Spaceman][]: An application for macOS that allows you to view your Spaces / Virtual Desktops in the menu bar.
+- [SpaceId][]: macOS space indicator.
 - [Itsycal][]: Itsycal is a tiny menu bar calendar which has a lot of features.
 - [Amphetamine][]: Powerful keep-awake utility.
 - [AppCleaner][]: A small app which allows you to thoroughly uninstall unwanted apps.
@@ -42,6 +43,7 @@ ln -s /run/current-system/sw/bin/yt-dlp /usr/bin/youtube-dl
 - [MacUpdater][]: An application that can scan your Mac and display which of the apps that you have installed are not up-to-date.
 
 
+[SpaceId]: https://github.com/dshnkao/SpaceId
 [Apple Configurator]: https://apps.apple.com/us/app/apple-configurator/id1037126344?mt=12
 [the skills of using vim and zsh]: https://github.com/tkuwill/Nix-On-MacOS/blob/master/skills.md
 [MacUpdater]: https://www.corecode.io/index.html

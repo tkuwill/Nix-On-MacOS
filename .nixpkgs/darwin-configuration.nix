@@ -11,6 +11,7 @@
     # for markdown and html preview in browser
     python311Packages.grip
     nodePackages_latest.live-server
+    # cli tools
     bat
     dialog
     ffmpeg
@@ -18,12 +19,13 @@
     lazygit
     neofetch
     newsboat
-    reattach-to-user-namespace
-    tmux
     tree
+    unar
     vifm
     yt-dlp
-
+    # for macOS tmux & clipboard
+    reattach-to-user-namespace
+    tmux
       
     ];
 

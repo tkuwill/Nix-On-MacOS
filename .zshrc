@@ -55,6 +55,7 @@ alias ls -l="ls -Gl"
 alias musicDownloadTui="~/ShellScripts/musicDownloadTui.sh"
 alias vpnLocation="curl ipinfo.io/country"
 alias vpnCountry="curl ifconfig.co/country"
+alias batterycycle="~/ShellScripts/batterycycle.sh"
 # Default key bindings
 [[ -n ${key[Delete]} ]] && bindkey "${key[Delete]}" delete-char
 [[ -n ${key[Home]} ]] && bindkey "${key[Home]}" beginning-of-line

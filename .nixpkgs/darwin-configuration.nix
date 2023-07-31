@@ -16,6 +16,7 @@
     dialog
     ffmpeg
     fzf
+    jq
     lazygit
     neofetch
     newsboat

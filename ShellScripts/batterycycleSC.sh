@@ -1,5 +1,5 @@
 #!/bin/zsh
-# Description: Record the battery cycles in logs. This script is for terminal use.
+# Description: Record the battery cycles in logs. This script is for shortcut.
 
 date >> ~/logs/batterycycle.log
 
@@ -14,5 +14,3 @@ elif [ "$STA" = "AC;" ]; then
 	    pmset -g rawbatt | sed '2 q' | sed '1 d' | awk '{print " Battery: " $9}' >> ~/logs/batterycycle.log
 	fi
 fi
-
-bat ~/logs/batterycycle.log

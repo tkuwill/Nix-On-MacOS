@@ -24,25 +24,48 @@ ln -s /run/current-system/sw/bin/yt-dlp /usr/bin/youtube-dl
 
 - [Amethyst][]: A tiling window manager for macOS.
 - [Apple Configurator][]: An app for configuring iOS devices on macOS.
-- [Spaceman][]: An application for macOS that allows you to view your Spaces / Virtual Desktops in the menu bar.
-- [SpaceId][]: macOS space indicator.
-- [Itsycal][]: Itsycal is a tiny menu bar calendar which has a lot of features.
-- [Amphetamine][]: Powerful keep-awake utility.
 - [AppCleaner][]: A small app which allows you to thoroughly uninstall unwanted apps.
+- ~~[Amphetamine][]: Powerful keep-awake utility.~~
+- [BetterZip][]: For preview archived files in Finder (Free version just work)
 - [BetterTouchTool][]: An app that allows you to customize various input devices on your Mac.
+- [Firefox][]: A fallback browser.
+- [Gestimer][]: A timer on the menubar.
 - [Hidden Bar][]: Hide the icons on the menubar.
 - [iina][]: Video player.
+- [Itsycal][]: Itsycal is a tiny menu bar calendar which has a lot of features.
+- [KeepingYouAwake][]: A small keep-awake utility.
 - [Keka][]: the macOS file archiver.
-- [MenuBar Stats][]: the monitor of mac.
+- [Line][]: A chatting app.
+- [Maccy][]: A powerful clipboard manager.
 - [Macs Fan Control][]: Control the fan in mac.
+- [MenuBar Stats][]: the monitor of mac.
+- [Microsoft Office][]: Just Office.
 - [NTFS for Mac][]: as its name.
+- ~~[Spaceman][]: An application for macOS that allows you to view your Spaces / Virtual Desktops in the menu bar.~~
+- [SpaceId][]: macOS space indicator.
 - [Yoink][]: Improved Drag and Drop.
+- [AdGuard for Safari][]: XD.
+- [Vimari][]: A Safari extension that provides vim style keyboard based navigation
 
-## Want to buy
+## Want to buy or Download when getting a new Mac in the future.
 
+- [Bartender][]: Take control of your menu bar.
 - [MacUpdater][]: An application that can scan your Mac and display which of the apps that you have installed are not up-to-date.
 
 
+
+
+
+[Vimari]: https://github.com/televator-apps/vimari
+[AdGuard for Safari]: https://adguard.com/zh_tw/adguard-safari/overview.html
+[Firefox]: https://www.mozilla.org/zh-TW/firefox/new/
+[Microsoft Office]: https://www.microsoft.com/zh-tw/
+[Maccy]: https://github.com/p0deje/Maccy
+[Line]: https://line.me/zh-hant/
+[Gestimer]: https://maddin.io/gestimer/
+[BetterZip]: https://macitbetter.com
+[Bartender]: https://www.macbartender.com
+[KeepingYouAwake]: https://keepingyouawake.app
 [SpaceId]: https://github.com/dshnkao/SpaceId
 [Apple Configurator]: https://apps.apple.com/us/app/apple-configurator/id1037126344?mt=12
 [the skills of using vim and zsh]: https://github.com/tkuwill/Nix-On-MacOS/blob/master/skills.md

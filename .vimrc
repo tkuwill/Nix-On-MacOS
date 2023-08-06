@@ -10,13 +10,13 @@ Plug 'preservim/nerdtree'
 Plug 'Yggdroot/indentLine'
 Plug 'justinmk/vim-sneak'
 " For changing mac input method to ENG when in normal mode
-Plug 'ybian/smartim' 
-" Plug 'itchyny/lightline.vim'
+" Plug 'ybian/smartim' 
 Plug 'ap/vim-css-color'
 Plug 'tpope/vim-commentary'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
 call plug#end()
 " This will make esc key respond faster when having the config below.
-set ttimeoutlen=100
+" set ttimeoutlen=70
 " Change input method to ENG when entering normal mode
 let g:smartim_default = 'com.apple.keylayout.ABC'
 
@@ -89,6 +89,9 @@ map <F2> :NERDTreeToggle<CR>
 set spelllang=en,cjk
 nnoremap <F3> :set spell<cr>
 nnoremap <F4> :set nospell<cr>
+" For relative-number-toggke.
+nnoremap <silent> <F1> :set relativenumber!<cr>
+
 "
 
 so ~/.vim/autoload/plug.vim

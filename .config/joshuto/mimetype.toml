@@ -1,0 +1,116 @@
+[class]
+image_default	= [
+	{ command = "open", fork = true, silent = true },
+]
+
+text_default	= [
+    { command = "vim" },
+    { command = "bat", args = [ "--paging=always" ] },
+]
+
+reader_default	= [
+	{ command = "open", fork = true, silent = true },
+]
+
+office_default = [
+	{ command = "open", fork = true, silent = true },
+]
+
+
+[extension]
+# inherit from image_default class
+png.inherit = "image_default"
+
+# inherit from image_default class
+jpg.inherit = "image_default"
+# in addition, also add gimp for .jpg files only
+jpg.app_list	= [
+	{ command = "gimp", fork = true, silent = true } 
+]
+
+mkv.app_list    = [
+	{ command = "mpv", args = [ "--" ] , fork = true, silent = true },
+	{ command = "mediainfo", confirm_exit = true },
+	{ command = "mpv", args = [ "--mute", "on", "--" ], fork = true, silent = true } 
+]
+
+rs.app_list = [
+        { command = "micro" },
+	{ command = "gedit", fork = true, silent = true },
+        { command = "bat", confirm_exit = true } 
+]
+
+## text formats
+build.inherit	= "text_default"
+c.inherit   = "text_default"
+cmake.inherit	= "text_default"
+conf.inherit	= "text_default"
+cpp.inherit = "text_default"
+css.inherit = "text_default"
+csv.inherit = "text_default"
+cu.inherit  = "text_default"
+dart.inherit	= "text_default"
+ebuild.inherit	= "text_default"
+eex.inherit = "text_default"
+env.inherit = "text_default"
+ex.inherit  = "text_default"
+exs.inherit = "text_default"
+go.inherit  = "text_default"
+h.inherit   = "text_default"
+hpp.inherit = "text_default"
+hs.inherit  = "text_default"
+html.inherit	= "text_default"
+ini.inherit = "text_default"
+java.inherit	= "text_default"
+js.inherit  = "text_default"
+json.inherit	= "text_default"
+kt.inherit  = "text_default"
+lua.inherit = "text_default"
+log.inherit = "text_default"
+md.inherit  = "text_default"
+micro.inherit	= "text_default"
+ninja.inherit	= "text_default"
+py.inherit  = "text_default"
+rkt.inherit = "text_default"
+rs.inherit  = "text_default"
+scss.inherit	= "text_default"
+sh.inherit  = "text_default"
+srt.inherit = "text_default"
+svelte.inherit	= "text_default"
+toml.inherit	= "text_default"
+tsx.inherit = "text_default"
+txt.inherit = "text_default"
+vim.inherit = "text_default"
+xml.inherit = "text_default"
+yaml.inherit	= "text_default"
+yml.inherit = "text_default"
+
+# pdf 
+pdf.inherit = "reader_default"
+
+# Office
+odt.inherit = "office_default"
+odf.inherit = "office_default"
+ods.inherit = "office_default"
+odp.inherit = "office_default"
+
+doc.inherit = "office_default"
+docx.inherit	= "office_default"
+xls.inherit = "office_default"
+xlsx.inherit	= "office_default"
+ppt.inherit = "office_default"
+pptx.inherit	= "office_default"
+
+numbers.inherit = "office_default"
+key.inherit = "office_default"
+pages.inherit = "office_default"
+
+[mimetype]
+
+# text/*
+[mimetype.text]
+inherit = "text_default"
+
+# application/octet-stream
+[mimetype.application.subtype.octet-stream]
+inherit = "video_default"

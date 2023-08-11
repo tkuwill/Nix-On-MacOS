@@ -20,7 +20,7 @@ PROMPT='%F{20} %~ ${vcs_info_msg_0_} %f
 HISTFILE=~/.zsh_history
 HISTSIZE=50000
 SAVEHIST=99999
-HISTORY_IGNORE="(ls -l|cd|pwd|exit|la|bye|lazygit|mpv|yt-dlp|./batterycycle.sh|tmux| ..)"
+HISTORY_IGNORE="(|joshuto|ls -l|cd|pwd|exit|la|bye|lazygit|mpv|yt-dlp|./batterycycle.sh|tmux|)"
 setopt beep nomatch
 unsetopt autocd extendedglob notify
 # Use C-x C-e to open the default editor to edit the command line

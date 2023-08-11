@@ -17,12 +17,13 @@
     ffmpeg
     fzf
     jq
+    # tui-file-manager 
+    joshuto
     lazygit
     neofetch
     newsboat
     tree
     unar
-    vifm
     yt-dlp
     # for macOS tmux & clipboard
     reattach-to-user-namespace

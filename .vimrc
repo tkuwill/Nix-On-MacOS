@@ -92,6 +92,10 @@ nnoremap <F4> :set nospell<cr>
 " For relative-number-toggke.
 nnoremap <silent> <F1> :set relativenumber!<cr>
 
+" Customized commands
+
+" Insertnum -- first, enter a few lines. use 'V'  for visual line mode to select the lines you want to insert numbers. then enter the command below. -w 2 for 1~99. -w 3 for 1~999.
 "
+command -nargs=1 Insertnum :'<,'>!nl -ba -w <args> -s '. '
 
 so ~/.vim/autoload/plug.vim

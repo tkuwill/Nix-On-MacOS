@@ -91,6 +91,7 @@ nnoremap <F3> :set spell<CR>
 nnoremap <F4> :set nospell<CR>
 " For relative-number-toggke.
 nnoremap <silent> <F1> :set relativenumber!<CR>
+" Credit from: https://vim.fandom.com/wiki/Insert_line_numbers
 " For insert numbers <99 in the lines selected 
 vnoremap <F6> :!nl -ba -w 2 -s '. '<CR>
 " For insert numbers <999 in the lines selected 

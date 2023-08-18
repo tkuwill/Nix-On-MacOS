@@ -11,12 +11,17 @@
     # for markdown and html preview in browser
     python311Packages.grip
     nodePackages_latest.live-server
+    # for vim-codefmt's engine
+    nodePackages_latest.js-beautify
+    nixpkgs-fmt
+    shfmt
     # cli tools
     bat
     dialog
     ffmpeg
     fzf
     jq
+    shellcheck
     # tui-file-manager 
     joshuto
     lazygit

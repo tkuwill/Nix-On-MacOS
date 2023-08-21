@@ -32,6 +32,8 @@ When entering spell check, there are the keys to use:
     - `S` : To search backwards. 
     - `;` : To go the next match.
     - `,` : To go the previous match.
+11. Quickly generate numbers
+    - Input `1.` at first, then copy and paste a few `1.` . Second, press `V` to select the lines you want to insert numbers. Finally in visual mode, press `g` as a prefix, then press `<C-A>` (Ctrl-a) to generate numbers in a sequence manner. 
 ## zsh skills in emacs mode
 
 1. Editing multi-line command, press `Esc+Enter` or `Alt+Enter` to insert the new line.

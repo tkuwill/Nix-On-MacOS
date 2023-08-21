@@ -100,11 +100,9 @@ let g:markdown_folding = 1
 au FileType markdown setlocal foldlevel=1
  
 "Keymapping
-nnoremap <C-A> :noh<CR>
-nnoremap <C-H> <Home>
-nnoremap <C-L> <End>
-inoremap <C-H> <Home>
-inoremap <C-L> <End>
+nnoremap <C-L> :noh<CR>
+nnoremap <C-A> <Home>
+nnoremap <C-E> <End>
 map <F2> :NERDTreeToggle<CR>
 " spelling check in English
 set spelllang=en,cjk
@@ -112,6 +110,16 @@ nnoremap <F3> :set spell<CR>
 nnoremap <F4> :set nospell<CR>
 " For relative-number-toggke.
 nnoremap <silent> <F1> :set relativenumber!<CR>
+" For moving cursor in Insert mode (but not use arrow keys)
+inoremap <C-F> <Right>
+inoremap <C-B> <Left>
+" inoremap <C-N> <Down>
+" inoremap <C-P> <Up>
+inoremap <C-A> <Home>
+inoremap <C-E> <End>
+
+
+
 " Credit from: https://vim.fandom.com/wiki/Insert_line_numbers
 " For insert numbers <99 in the lines selected 
 vnoremap <F6> :!nl -ba -w 2 -s '. '<CR>

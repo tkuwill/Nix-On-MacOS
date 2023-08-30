@@ -3,10 +3,10 @@
 {
 
   # Default editor
-  environment.variables.EDITOR = "vim";  
+  environment.variables.EDITOR = "vim";
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
-  environment.systemPackages = with pkgs; [ 
+  environment.systemPackages = with pkgs; [
     vim
     # for markdown and html preview in browser
     python311Packages.grip
@@ -22,6 +22,7 @@
     fzf
     jq
     shellcheck
+    wimlib
     # tui-file-manager 
     joshuto
     lazygit
@@ -33,9 +34,13 @@
     # for macOS tmux & clipboard
     reattach-to-user-namespace
     tmux
-      
-    ];
 
+  ];
+
+  # Font
+  fonts.fonts = with pkgs; [
+    hackgen-nf-font # Nerd font used for terminal.
+  ];
   # Use a custom configuration.nix location.
   # $ darwin-rebuild switch -I darwin-config=$HOME/.config/nixpkgs/darwin/configuration.nix
   # environment.darwinConfig = "$HOME/.config/nixpkgs/darwin/configuration.nix";
@@ -45,7 +50,7 @@
   nix.package = pkgs.nix;
 
   # Create /etc/zshrc that loads the nix-darwin environment.
-  programs.zsh.enable = true;  # default shell on catalina
+  programs.zsh.enable = true; # default shell on catalina
   # programs.fish.enable = true;
 
   # Used for backwards compatibility, please read the changelog before changing.

@@ -4,6 +4,7 @@ dotfiles on macOS & a memo of the commands used for nix on macOS
 ---
 
 - [darwin-configuration.nix][] is the file equivalent to **configuration.nix** on NixOS. If you want to use that feature on macOS, see [nix-darwin][].
+- Use [Home-manager][] to config [zsh][], [bat][], [tmux][] and [newsboat][].
 - Also, you can take a look at [MacOS Nix Setup (an alternative to Homebrew)][].
 - You can see the command in [nixCommand.md][].
 - Here is [the skills of using vim and zsh][].
@@ -23,6 +24,7 @@ ln -s /run/current-system/sw/bin/yt-dlp /usr/bin/youtube-dl
 ## Needed softwares
 
 - [Amethyst][]: A tiling window manager for macOS.
+- [Alfred][]: A spotlight's substitute.
 - [Apple Configurator][]: An app for configuring iOS devices on macOS.
 - [AppCleaner][]: A small app which allows you to thoroughly uninstall unwanted apps.
 - ~~[Amphetamine][]: Powerful keep-awake utility.~~
@@ -56,6 +58,7 @@ ln -s /run/current-system/sw/bin/yt-dlp /usr/bin/youtube-dl
 
 
 
+[Alfred]: https://www.alfredapp.com
 [Vimari]: https://github.com/televator-apps/vimari
 [AdGuard for Safari]: https://adguard.com/zh_tw/adguard-safari/overview.html
 [Firefox]: https://www.mozilla.org/zh-TW/firefox/new/
@@ -91,4 +94,9 @@ ln -s /run/current-system/sw/bin/yt-dlp /usr/bin/youtube-dl
 [Rime鼠鬚管]: https://rime.im/download/
 [地球拼音]: https://gist.github.com/lotem/2309739#file-default-custom-yaml-L12
 [朙月拼音]: https://gist.github.com/lotem/2309739#file-default-custom-yaml-L11
+[Home-manager]: https://nix-community.github.io/home-manager/index.html
+[zsh]: https://github.com/tkuwill/Nix-On-MacOS/blob/master/.config/home-manager/zsh.nix
+[bat]: https://github.com/tkuwill/Nix-On-MacOS/blob/master/.config/home-manager/bat.nix
+[tmux]: https://github.com/tkuwill/Nix-On-MacOS/blob/master/.config/home-manager/tmux.nix
+[newsboat]: https://github.com/tkuwill/Nix-On-MacOS/blob/master/.config/home-manager/newsboat.nix
 

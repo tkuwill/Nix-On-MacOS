@@ -2,7 +2,8 @@
   programs.newsboat = {
     enable = true;
     autoReload = true;
-    browser = '' "open - a Safari - g" '';
+    #browser = '' "open - a Safari - g" '';
+    browser = "open";
     extraConfig = ''
       include ~/.config/newsboat/plain.config
       unbind-key j

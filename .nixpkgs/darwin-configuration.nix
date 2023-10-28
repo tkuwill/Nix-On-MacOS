@@ -17,6 +17,7 @@
     shfmt
     # cli tools
     bat
+    curlWithGnuTls
     dialog
     ffmpeg
     fzf

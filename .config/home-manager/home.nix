@@ -3,8 +3,11 @@
 {
   imports = [
     ./bat.nix
+    ./bottom/bottom.nix
     ./newsboat.nix
     ./tmux.nix
+    ./yazi/yazi.nix
+    ./zoxide.nix
     ./zsh.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
@@ -55,6 +58,8 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
+    "${config.xdg.configHome}/bottom/bottom.toml".text = builtins.readFile ./bottom/bottom.toml;
+    "${config.xdg.configHome}/yazi/keymap.toml".text = builtins.readFile ./yazi/keymap.toml;
   };
 
   # You can also manage environment variables but you will have to manually

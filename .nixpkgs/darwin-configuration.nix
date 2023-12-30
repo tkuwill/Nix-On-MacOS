@@ -24,8 +24,6 @@
     jq
     shellcheck
     wimlib
-    # tui-file-manager 
-    joshuto
     lazygit
     neofetch
     newsboat

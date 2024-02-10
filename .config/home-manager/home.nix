@@ -23,10 +23,22 @@
   # want to update the value, then make sure to first check the Home Manager
   # release notes.
   home.stateVersion = "23.05"; # Please read the comment before changing.
+  nixpkgs.overlays = [
+    (self: super: {
+      mpv = super.mpv.override {
+        scripts = with self.mpvScripts; [
+          mpv-playlistmanager
+          quality-menu
+          thumbfast
+        ];
+      };
+    })
+  ];
+
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
-  home.packages = [
+  home.packages = with pkgs; [
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -43,6 +55,8 @@
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
+    mpv
+    streamlink
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -60,6 +74,11 @@
     # '';
     "${config.xdg.configHome}/bottom/bottom.toml".text = builtins.readFile ./bottom/bottom.toml;
     "${config.xdg.configHome}/yazi/keymap.toml".text = builtins.readFile ./yazi/keymap.toml;
+    "${config.xdg.configHome}/mpv/mpv.conf".text = builtins.readFile ./mpv/mpv.conf;
+    "${config.xdg.configHome}/mpv/input.conf".text = builtins.readFile ./mpv/input.conf;
+    "${config.xdg.configHome}/mpv/script-opts/quality-menu.conf".text = builtins.readFile ./mpv/script-opts/quality-menu.conf;
+    "${config.xdg.configHome}/mpv/script-opts/thumbfast.conf".text = builtins.readFile ./mpv/script-opts/thumbfast.conf;
+    "${config.xdg.configHome}/mpv/scripts/osc.lua".text = builtins.readFile ./mpv/scripts/osc.lua;
   };
 
   # You can also manage environment variables but you will have to manually

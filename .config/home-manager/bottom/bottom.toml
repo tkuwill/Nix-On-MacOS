@@ -12,7 +12,7 @@ hide_avg_cpu = true
 # Whether to use dot markers rather than braille.
 #dot_marker = false
 # The update rate of the application.
-rate = "7s"
+rate = "3s"
 # Whether to put the CPU legend to the left.
 #left_legend = false
 # Whether to set CPU% on a process to be based on the total CPU or just current usage.

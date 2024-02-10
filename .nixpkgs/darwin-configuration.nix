@@ -1,6 +1,19 @@
 { config, pkgs, ... }:
 
 {
+  # nixpkgs.overlays = [
+  #   (self: super: {
+  #     mpv = super.mpv.override {
+  #       scripts = with self.mpvScripts; [
+  #         mpv-playlistmanager
+  #         quality-menu
+  #         thumbfast
+  #         uosc
+  #       ];
+  #     };
+  #   })
+  # ];
+
 
   # Default editor
   environment.variables.EDITOR = "vim";
@@ -33,7 +46,9 @@
     # for macOS tmux & clipboard
     reattach-to-user-namespace
     tmux
-
+    # for live-stream
+    # mpv
+    # streamlink
   ];
 
   # Font

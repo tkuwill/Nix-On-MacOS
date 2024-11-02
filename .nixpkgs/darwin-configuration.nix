@@ -7,13 +7,13 @@
   #       scripts = with self.mpvScripts; [
   #         mpv-playlistmanager
   #         quality-menu
-  #         thumbfast
-  #         uosc
+  #         # thumbfast
   #       ];
   #     };
   #   })
   # ];
 
+  ids.uids.nixbld = 300;
 
   # Default editor
   environment.variables.EDITOR = "vim";
@@ -22,10 +22,8 @@
   environment.systemPackages = with pkgs; [
     vim
     # for markdown and html preview in browser
-    python311Packages.grip
-    nodePackages_latest.live-server
     # for vim-codefmt's engine
-    nodePackages_latest.js-beautify
+    # nodePackages_latest.js-beautify
     nixpkgs-fmt
     shfmt
     # cli tools
@@ -38,7 +36,6 @@
     shellcheck
     wimlib
     lazygit
-    neofetch
     newsboat
     tree
     unar
@@ -48,11 +45,11 @@
     tmux
     # for live-stream
     # mpv
-    # streamlink
+    streamlink
   ];
 
   # Font
-  fonts.fonts = with pkgs; [
+  fonts.packages = with pkgs; [
     hackgen-nf-font # Nerd font used for terminal.
   ];
   # Use a custom configuration.nix location.

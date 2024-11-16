@@ -6,6 +6,7 @@
     mouse = true;
     terminal = "screen-256color";
     extraConfig = ''
+      set -g default-command /Users/will/.nix-profile/bin/zsh
       set -g allow-passthrough on
       set -ga update-environment TERM
       set -ga update-environment TERM_PROGRAM

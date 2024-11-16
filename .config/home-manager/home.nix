@@ -57,8 +57,8 @@
     # '')
     # mpv
     # streamlink
-    live-server
-    python311Packages.grip # Preview GitHub Markdown files like Readme locally before committing them
+    # live-server
+    # python311Packages.grip # Preview GitHub Markdown files like Readme locally before committing them
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

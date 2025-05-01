@@ -54,11 +54,34 @@
     # # environment:
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
-    # '')
+    vim
+    # for markdown and html preview in browser
+    python312Packages.grip
+    # for vim-codefmt's engine
+    # nodePackages_latest.js-beautify
+    nixpkgs-fmt
+    shfmt
+    # cli tools
+    bat
+    curlWithGnuTls
+    dialog
+    ffmpeg
+    fzf
+    jq
+    shellcheck
+    wimlib
+    lazygit
+    fastfetch
+    newsboat
+    tree
+    unar
+    yt-dlp
+    # for macOS tmux & clipboard
+    reattach-to-user-namespace
+    tmux
+    # for live-stream
     # mpv
-    # streamlink
-    # live-server
-    # python311Packages.grip # Preview GitHub Markdown files like Readme locally before committing them
+    streamlink
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -97,6 +120,7 @@
     # EDITOR = "emacs";
   };
 
+  programs.zsh.enable = true; # default shell on catalina
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }

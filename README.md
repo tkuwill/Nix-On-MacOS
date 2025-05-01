@@ -4,7 +4,7 @@ dotfiles on macOS & a memo of the commands used for nix on macOS
 ---
 
 - [darwin-configuration.nix][] is the file equivalent to **configuration.nix** on NixOS. If you want to use that feature on macOS, see [nix-darwin][].
-- Use [Home-manager][] to config [zsh][], [bat][], [tmux][] and [newsboat][].
+- Use [Home-manager][] to config [zsh][], [bat][], [tmux][] and [newsboat][] and install packages.
 - Also, you can take a look at [MacOS Nix Setup (an alternative to Homebrew)][].
 - You can see the command in [nixCommand.md][].
 - Here is [the skills of using vim and zsh][].
@@ -23,7 +23,7 @@ ln -s /run/current-system/sw/bin/yt-dlp /usr/bin/youtube-dl
 ```
 ## Needed softwares
 
-- [Amethyst][]: A tiling window manager for macOS.
+- ~~[Amethyst][]: A tiling window manager for macOS.~~
 - [Alfred][]: A spotlight's substitute.
 - [Apple Configurator][]: An app for configuring iOS devices on macOS.
 - [AppCleaner][]: A small app which allows you to thoroughly uninstall unwanted apps.
@@ -32,30 +32,39 @@ ln -s /run/current-system/sw/bin/yt-dlp /usr/bin/youtube-dl
 - [BetterTouchTool][]: An app that allows you to customize various input devices on your Mac.
 - [Firefox][]: A fallback browser.
 - [Gestimer][]: A timer on the menubar.
-- [Hidden Bar][]: Hide the icons on the menubar.
+- ~~[Hidden Bar][]: Hide the icons on the menubar.~~
 - [iina][]: Video player.
 - [Itsycal][]: Itsycal is a tiny menu bar calendar which has a lot of features.
-- [KeepingYouAwake][]: A small keep-awake utility.
+- ~~[KeepingYouAwake][]: A small keep-awake utility.~~
 - [Keka][]: the macOS file archiver.
 - [Line][]: A chatting app.
 - [Maccy][]: A powerful clipboard manager.
 - [Macs Fan Control][]: Control the fan in mac.
-- [MenuBar Stats][]: the monitor of mac.
+- ~~[MenuBar Stats][]: the monitor of mac.~~
 - [Microsoft Office][]: Just Office.
 - [NTFS for Mac][]: as its name.
+- [OnlySwitch][]: ⚙️ All-in-One menu bar app, hide 💻MacBook Pro's notch, dark mode, AirPods, Shortcuts
 - ~~[Spaceman][]: An application for macOS that allows you to view your Spaces / Virtual Desktops in the menu bar.~~
-- [SpaceId][]: macOS space indicator.
+- ~~[SpaceId][]: macOS space indicator.~~
 - [Yoink][]: Improved Drag and Drop.
-- [AdGuard for Safari][]: XD.
-- [Vimari][]: A Safari extension that provides vim style keyboard based navigation
+- ~~[AdGuard for Safari][]: XD.~~
+- ~~[Vimari][]: A Safari extension that provides vim style keyboard based navigation.~~
 
 ## Want to buy or Download when getting a new Mac in the future.
 
 - [Bartender][]: Take control of your menu bar.
 - [MacUpdater][]: An application that can scan your Mac and display which of the apps that you have installed are not up-to-date.
 
+## Note at 2025/5/1
 
+IDK why nix-darwin is dead on my MacBook Air. So I removed it. Now I will just update nix by command below.
+```
+sudo nix-env --install --file '<nixpkgs>' --attr nix cacert -I nixpkgs=channel:nixpkgs-unstable
+sudo launchctl remove org.nixos.nix-daemon
+sudo launchctl load /Library/LaunchDaemons/org.nixos.nix-daemon.plist
 
+```
+And only install packages by `home-manager`.
 
 
 [Alfred]: https://www.alfredapp.com
@@ -99,4 +108,4 @@ ln -s /run/current-system/sw/bin/yt-dlp /usr/bin/youtube-dl
 [bat]: https://github.com/tkuwill/Nix-On-MacOS/blob/master/.config/home-manager/bat.nix
 [tmux]: https://github.com/tkuwill/Nix-On-MacOS/blob/master/.config/home-manager/tmux.nix
 [newsboat]: https://github.com/tkuwill/Nix-On-MacOS/blob/master/.config/home-manager/newsboat.nix
-
+[OnlySwitch]: https://github.com/jacklandrin/OnlySwitch 

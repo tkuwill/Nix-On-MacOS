@@ -53,7 +53,7 @@ ln -s /run/current-system/sw/bin/yt-dlp /usr/bin/youtube-dl
 ## Want to buy or Download when getting a new Mac in the future.
 
 - [Bartender][]: Take control of your menu bar.
-- [MacUpdater][]: An application that can scan your Mac and display which of the apps that you have installed are not up-to-date.
+- ~~[MacUpdater][]: An application that can scan your Mac and display which of the apps that you have installed are not up-to-date.~~ MacUpdater will stop develop at 2026/1/1.
 
 ## Note at 2025/5/1
 

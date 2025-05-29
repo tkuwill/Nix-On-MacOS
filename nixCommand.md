@@ -1,6 +1,10 @@
 ### You should be patient because nix is slow. (Idk why but on my mba 2015 is slow.)
 ##### Credit from [Nix Reference Manual][] and [MacOS Nix Setup (an alternative to Homebrew)][].
-### If you don't use [nix-darwin][], you will have to install packages just like other normal package managers. 
+### 20250529 Update: If you don't use `nix-darwin`, you can use `home-manager` to install packages instead.
+
+~~If you don't use [nix-darwin][], you will have to install packages just like other normal package managers.~~
+
+
 1. Installing a package.
 ```bash
 nix-env -iA nixpkgs.package_name
@@ -47,8 +51,12 @@ This command can let you compare installed versions to what’s available.
 
 7. [Upgrading Nix][] 
 ```bash
-sudo -i sh -c 'nix-channel --update && nix-env -iA nixpkgs.nix && launchctl remove org.nixos.nix-daemon && launchctl load /Library/LaunchDaemons/org.nixos.nix-daemon.plist'
+sudo nix-env --install --file '<nixpkgs>' --attr nix cacert -I nixpkgs=channel:nixpkgs-unstable
+sudo launchctl remove org.nixos.nix-daemon
+sudo launchctl load /Library/LaunchDaemons/org.nixos.nix-daemon.plist
 ```
+~~sudo -i sh -c 'nix-channel --update && nix-env -iA nixpkgs.nix && launchctl remove org.nixos.nix-daemon && launchctl load /Library/LaunchDaemons/org.nixos.nix-daemon.plist'~~
+
 8. [Fix Nix on macOS after system update][]
 After a macOS update, check `/etc/zshrc`. It should have the codes following: 
 

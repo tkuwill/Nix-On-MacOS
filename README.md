@@ -62,8 +62,19 @@ IDK why nix-darwin is dead on my MacBook Air. So I removed it. Now I will just u
 sudo nix-env --install --file '<nixpkgs>' --attr nix cacert -I nixpkgs=channel:nixpkgs-unstable
 sudo launchctl remove org.nixos.nix-daemon
 sudo launchctl load /Library/LaunchDaemons/org.nixos.nix-daemon.plist
+```
+
+You can also update `Nix` by 
+```
+sudo -i nix upgrade-nix
+```
+
+Then check the version of `Nix` by 
 
 ```
+nix --version
+```
+
 And only install packages by `home-manager`.
 
 
